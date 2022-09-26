@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="keywords"
+      content="antd,umi,umijs,ant design,Scaffolding, layout, Ant Design, project, Pro, admin, console, homepage, out-of-the-box, middle and back office, solution, component library"
+    />
+    <meta
+      name="description"
+      content="
+    An out-of-box UI solution for enterprise applications as a React boilerplate."
+    />
+    <meta
+      name="description"
+      content="
+      Out-of-the-box mid-stage front-end/design solution."
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <title>业务服务运营平台</title>
+  </head>
+  <body>
+    <div id="root">
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          min-height: 420px;
+        "
+      >
+        <div style="display: flex; align-items: center; justify-content: center">华亭科技</div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      // 监听 window.onload 是否执行，用于组件中执行 onload 后续事件
+      var addEvent = window.addEventListener;
+      if (!addEvent) {
+        addEvent = window.attachEvent;
+      }
+      addEvent(
+        'load',
+        function () {
+          try {
+            var rootNode = document.querySelector('#root');
+            if (rootNode && !rootNode.innerHTML) {
+              // ready 0.3s 后节点内容为空，
+              setTimeout(function () {
+                // 插入节点前再次检查是否白屏
+                if (!rootNode.innerHTML) {
+                  var el = document.createElement('div'),
+                    elStyle = el.style,
+                    docBody = document.getElementsByTagName('body')[0],
+                    linkStyle = 'color:#06F;text-decoration: underline;';
+                  imgstyle = 'width: 50%;position: fixed;right: 0;top: 50%;margin-top: -16%;';
+                  textstylediv = 'position: fixed;top: 50%;margin-top: -150px;margin-left: 10%;';
+                  textstyle1 =
+                    'width: 341px;height: 89px;font-size: 36px;font-family: Microsoft YaHei;font-weight: bold;color: #333333;margin-bottom: 94px;';
+                  textstyle2 =
+                    'width: 628px;height: 28px;font-size: 28px;font-family: Microsoft YaHei;font-weight: 400;margin-bottom: 14px;color: #333333;';
+                  btnstyle1 =
+                    'width: 154px;height: 60px;background: #1A73E8;text-align: center;border-radius: 4px;display: inline-block;color: #fff;line-height: 60px;';
+                  btnstyle2 =
+                    'width: 154px;height: 60px;background: #1A73E8;text-align: center;border-radius: 4px;display: inline-block;color: #fff; margin-left: 30px;line-height: 60px;';
+                  footstyle =
+                    'position: fixed;bottom: 0;text-align: center;color: #999;width:560px;left:50%;margin-left:-250px;';
+                  el.innerHTML =
+                    '<div style="' +
+                    footstyle +
+                    '">技术支持：杭州华亭科技有限公司 / 服务热线：4006-135798 / 版本：V1.1.0</div><div style="' +
+                    imgstyle +
+                    '"> <img src="https://cdn.nlark.com/yuque/0/2020/png/103313/1606372735126-c14b9315-cfcf-4b40-86a4-dfa4ab3ee836.png" alt="" style="width: 100%;"></div><div style="' +
+                    textstylediv +
+                    '"><div style="' +
+                    textstyle1 +
+                    '">sorry<br /> 暂不支持当前浏览器</div><div style="' +
+                    textstyle2 +
+                    '">请下载Goole Chrome / Firefox火狐浏览器打开</div><div><a style="' +
+                    btnstyle1 +
+                    '" href="https://www.google.cn/intl/zh-CN/chrome/" target="_blank">下载Chrome</a><a style="' +
+                    btnstyle2 +
+                    '" href="http://www.firefox.com.cn/download/" target="_blank">下载Firefox</a></div></div>';
+                  // elStyle.width = '100%';
+                  docBody.innerHTML = '';
+                  docBody.appendChild(el);
+                }
+              }, 300);
+            }
+          } catch (e) {
+            console.log(e);
+          }
+        },
+        false,
+      );
+      //rem
+      document.documentElement.style.fontSize =
+        (document.documentElement.clientWidth / 1920) * 100 + 'px';
+      window.onresize = function () {
+        document.documentElement.style.fontSize =
+          (document.documentElement.clientWidth / 1920) * 100 + 'px';
+      };
+    </script>
+  </body>
+</html>

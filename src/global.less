@@ -1,0 +1,98 @@
+@import '~antd/es/style/variable.less';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+.ht_overview{
+  display: flex;
+  align-items: center;
+  line-height: 20px;
+  font-size: 16px;
+  font-family: Microsoft YaHei-Regular, Microsoft YaHei;
+  color: rgba(0, 0, 0, 0.86);
+}
+.ht_overview_divider{
+  display: inline-block;
+  width: 1px;
+  height: 16px;
+  margin: 0 10px;
+  background-color: rgba(0, 0, 0, .6);
+}
+
+// 右侧背景色
+.ant-layout {
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+.ant-pro-sider.ant-layout-sider.ant-pro-sider-fixed {
+  left: unset;
+}
+// 头部header背景色
+.ant-pro-global-header-layout-mix {
+  background-color: #ffffff!important;
+  // color: rgba(0, 0, 0, 0.86);
+  h1{
+    color: rgba(0, 0, 0, 0.86)!important;
+  }
+  .anticon{
+    color: rgba(0, 0, 0, 0.86)!important;
+  }
+}
+// info-alert样式
+.ant-alert-info {
+  padding: 10px;
+  color: rgba(0, 0, 0, 0.86)!important;;
+  font-size: 16px!important;;
+  // font-size: 0.16rem!important;;
+  background-color: #e3e8fe!important;
+  border: none!important;
+  border-radius: 0.04rem;
+}
+.ant-btn {
+  border-radius: 4px;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// Compatible with IE11
+@media screen and(-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body .ant-design-pro > .ant-layout {
+    min-height: 100vh;
+  }
+}

@@ -1,0 +1,223 @@
+.htTablesBox {
+  display: block;
+
+  .filter {
+    padding: 20px;
+    padding-bottom: 0;
+    background: #fff;
+    border-radius: 0.12rem;
+    .resetBtn{
+      background: #F3F3F3;
+      border: none;
+    }
+    .icons {
+      font-size: 14px;
+    }
+    :global(.ant-form-item){
+      margin-bottom: 20px;
+    }
+
+    :global(.ant-select-selector){
+      height: 32px;
+      overflow-y: auto;
+      &::-webkit-scrollbar{
+        // display: none;
+        width: 8px;
+        // height: 4px;
+      }
+      &::-webkit-scrollbar-thumb{
+        background-color: #666666;
+        border-radius: 3px;
+        cursor: default;
+      }
+    }
+    [data-theme='compact'] .ant-advanced-search-form,
+    .ant-advanced-search-form {
+      padding: 24px;
+      background: #fbfbfb;
+      border: 1px solid #d9d9d9;
+      border-radius: 2px;
+    }
+
+    [data-theme='compact'] .ant-advanced-search-form .ant-form-item,
+    .ant-advanced-search-form .ant-form-item {
+      display: flex;
+    }
+
+    [data-theme='compact'] .ant-advanced-search-form .ant-form-item-control-wrapper,
+    .ant-advanced-search-form .ant-form-item-control-wrapper {
+      flex: 1;
+    }
+  }
+  .tables {
+    display: block;
+    // margin-top: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 0.12rem;
+    // btns操作按钮
+    .columnConfig {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      //padding-left: 0.1rem;
+      //text-align: right;
+      .optBtnWrap{
+        flex: 1;
+        text-align: right;
+      }
+      .batchBtns {
+        display: inline-block;
+        > button {
+          margin-left: 0.1rem;
+        }
+      }
+    }
+    // alertRow: 信息Alert提示
+    .alertRow {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      background: #e3e8fe;
+      border: none;
+    }
+    // alertSelectRow: 多选后出现时的Alert提示 样式
+    .alertSelectRow {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .actionBtns {
+        > button {
+          padding: 0.05rem 0.1rem;
+        }
+      }
+    }
+    :global(.ant-table-pagination.ant-pagination) {
+      //padding-right: 0.12rem;
+      margin: 16px 0 0;
+    }
+
+    // table 头部背景色
+    :global(.ant-table-thead > tr > th) {
+      color: #fff;
+      background: #728bf8;
+    }
+    // table tbody选中背景色
+    :global(.ant-table-tbody > tr.ant-table-row-selected > td) {
+      background: #e3e8fe;
+    }
+    // table 边框颜色
+    :global(.ant-table.ant-table-bordered > .ant-table-container),
+    :global(table),
+    :global(th),
+    :global(td) {
+      border-color: #dce6ee !important;
+    }
+    // table
+  }
+}
+
+
+
+// .htTablesBox {
+//   display: block;
+
+//   .filter {
+//     padding: 0.2rem;
+//     padding-top: 0.1rem;
+//     background: #fff;
+//     border-radius: 0.12rem;
+//     .icons {
+//       font-size: 14px;
+//     }
+//     :global(.ant-form-item){
+//       margin-bottom: 0;
+//     }
+//     [data-theme='compact'] .ant-advanced-search-form,
+//     .ant-advanced-search-form {
+//       padding: 24px;
+//       background: #fbfbfb;
+//       border: 1px solid #d9d9d9;
+//       border-radius: 2px;
+//     }
+
+//     [data-theme='compact'] .ant-advanced-search-form .ant-form-item,
+//     .ant-advanced-search-form .ant-form-item {
+//       display: flex;
+//     }
+
+//     [data-theme='compact'] .ant-advanced-search-form .ant-form-item-control-wrapper,
+//     .ant-advanced-search-form .ant-form-item-control-wrapper {
+//       flex: 1;
+//     }
+//   }
+//   .tables {
+//     display: block;
+//     // margin-top: 0.2rem;
+//     padding: 0.2rem;
+//     background: #fff;
+//     border-radius: 0.12rem;
+//     padding-top: 0;
+//     // btns操作按钮
+//     .columnConfig {
+//       display: flex;
+//       align-items: center;
+//       justify-content: space-between;
+//       margin-bottom: 10px;
+//       //padding-left: 0.1rem;
+//       //text-align: right;
+//       .optBtnWrap{
+//         flex: 1;
+//         text-align: right;
+//       }
+//       .batchBtns {
+//         display: inline-block;
+//         > button {
+//           margin-left: 0.1rem;
+//         }
+//       }
+//     }
+//     // alertRow: 信息Alert提示
+//     .alertRow {
+//       display: flex;
+//       align-items: center;
+//       margin-bottom: 0.2rem;
+//       background: #e3e8fe;
+//       border: none;
+//     }
+//     // alertSelectRow: 多选后出现时的Alert提示 样式
+//     .alertSelectRow {
+//       display: flex;
+//       align-items: center;
+//       justify-content: space-between;
+//       .actionBtns {
+//         > button {
+//           padding: 0.05rem 0.1rem;
+//         }
+//       }
+//     }
+//     :global(.ant-table-pagination.ant-pagination) {
+//       //padding-right: 0.12rem;
+//       margin: 0.16rem 0 0;
+//     }
+
+//     // table 头部背景色
+//     :global(.ant-table-thead > tr > th) {
+//       color: #fff;
+//       background: #728bf8;
+//     }
+//     // table tbody选中背景色
+//     :global(.ant-table-tbody > tr.ant-table-row-selected > td) {
+//       background: #e3e8fe;
+//     }
+//     // table 边框颜色
+//     :global(.ant-table.ant-table-bordered > .ant-table-container),
+//     :global(table),
+//     :global(th),
+//     :global(td) {
+//       border-color: #dce6ee !important;
+//     }
+//     // table
+//   }
+// }
